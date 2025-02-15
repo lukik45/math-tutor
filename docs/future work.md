@@ -1,0 +1,1 @@
+- Uczeń potrzebuje się skupić przed sesją nauki -> lobby, wyciszenie, medytacja, spisanie tego co aktualnie wierci w głowie
