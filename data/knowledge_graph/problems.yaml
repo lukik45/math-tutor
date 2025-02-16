@@ -1,0 +1,7 @@
+problems:
+  - id: "P1"
+    text: "For which values of m does the function f(x) = (6m^2 - 12m)x - 5 have no zeroes?"
+    difficulty: "Medium"
+  - id: "P2"
+    text: "The perimeter of a rectangle is 8. Determine the lengths of its sides so that the rectangle has the shortest possible diagonal."
+    difficulty: "Medium"

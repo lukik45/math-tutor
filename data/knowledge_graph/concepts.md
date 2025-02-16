@@ -1,0 +1,129 @@
+
+
+Arithmetic
+
+- własności liczb
+	- rodzaje liczb
+		- naturalne
+		- wymierne
+		- całkowite
+		- niewymierne
+	- systemy liczbowe
+		- system dziesiętny
+		- system rzymski
+	- oś liczbowa
+		- liczby dodatnie
+		- liczby ujemne
+		- zbiory liczb
+			- Domknięcie zbioru
+		- wartość bezwzględna
+		- liczby przeciwne
+	- podzielność liczb
+		- podzielność przez 2
+		- 3
+		- 4
+		- 5
+		- 6
+		- 9
+		- 10
+	- liczby pierwsze i złożone
+		- rozkład liczby na czynniki pierwsze
+		- największy wspólny dzizelnik
+		- najmniejsza wspólna wielokrotność
+- działania na liczbach
+	- dodawanie
+	- odejmowanie
+	- mnożenie
+		- mnożenie przez liczbę ujemną
+	- pierwiastkowanie
+		- własności pierwiastków
+		- działania na pierwiastkach
+		- pierwiastek kwadratowy
+		- pierwiastek sześcienny
+		- szacowanie wartości pierwiastka (requires szacowanie)
+	- potęgowanie
+		- potęga o wykładniku naturalnym
+		- własności potęg
+			- znak iloczynu (requires mnożenie przez liczbę ujemną)
+			- różnica pomiędzy -a^x a (-a)^x 
+			- wyłączanie czynnika przed piewiastek (requires wyłączanie czynnika)
+		- działania na potęgach
+			- mnożenie liczb o tej samej potędze
+			- mnożenie tej samej liczny o innych potęgach
+			- dzielenie 
+			- dzielenie (fill it)
+			- potęgowanie liczby potęgowanej
+		- notacja wykładnicza
+	- zaokrąglanie 
+	- dzielenie 
+		- dzielenie z resztą 
+		- podzielność liczb (połączyć - requires 2 prerequisites)
+- ułamki
+	- ułamek zwykły
+		- klasyfikacja ułamków (niewłaściwy, właściwy, liczba mieszana)
+		- skracanie ułamka zwykłego
+		- rozszerzanie ułamka zwykłego
+		- dodawanie ułamków zwykłych
+		- odejmowanie
+		- mnożenie
+		- dzielenie
+		- porównywanie ułamków
+		- odwrotność liczby
+	- ułamek dziesiętny (requrires system dziesiętny)
+		- dodawanie
+		- mnożenie 
+			- mnożenie przez 10,100,1000
+		- dzielenie
+			- dzielenie przez 10,100,1000
+			- 
+
+	- zamiana ułamka pomiędzy zwykłym a dziesiętnym (requires both)
+
+- jednostki
+	- podstawowe jednostki
+		- masy
+		- długości
+		- czasu
+	- tworzenie nazw jednostek pochodnych
+	- zamiana jednostek długości
+	- zamiana jednostek masy
+	- jednostki prędkości
+	- obliczenia kalendarzowe
+	- skala i plan
+
+- procenty
+	- procent jako ułamek
+	- obliczanie jakim procentem jednej liczby jest druga liczba
+	- obliczanie liczby, gdy dany jest procent
+	- zmiana wielkości o dany procent
+	- obliczenia procentowe w praktyce
+		- podwyżka i obniżka
+		- powiększanie i pomniejszanie o dany procent
+		- podatek VAT
+		- stężenie procentowe
+
+
+
+algebra
+- liczby i zmienne
+- nazewnictwo wyrażeń algebraiczych
+	- kwadrat
+	- iloczyn
+	- iloraz
+-  kolejność wykonywania działań
+- suma algebraiczna
+	- wyłączanie przed nawias
+	- mnożenie nawiasów 
+- minus przed wyrażeniem
+- równania
+	- rozwiązywanie równań
+		- operacje obustronne
+			- odejmowanie, dodawanie (przenoszenie)
+			- mnożenie, dzielenie (link to approprate required)
+			- 
+	- równania z jedną niewiadomą
+		- równanie liniowe z jedną niewiadomą
+			- równanie tożsamościowe
+			- równanie sprzeczne
+			- to trzecie
+	

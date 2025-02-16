@@ -201,43 +201,39 @@ Exercise Module → User: Provide Learning Resources
 ```json
 {
   "problem": "For which values of m does the function f(x) = (6m^2 - 12m)x - 5 have no zeroes?"
-}
 ```
-
-#### **Example Output (Step-by-Step)**
-
+#### Example Output
 ```json
-{
   "solution": [
     {
       "step": 1,
-      "clarification": "Identify that the function is a linear function",
-      "solution": "This is a linear function, which follows the formula f(x) = ax + b, where a = (6m^2 - 12m), b = -5",
-      "building_block": "Function → Linear Function"
+      "step_explanation": "Identify that the function is a linear function.",
+      "math_transformation": "This is a linear function, which follows the formula f(x) = ax + b, where a = (6m^2 - 12m), b = -5.",
+      "related_concept": ["Linear Function"]
     },
     {
       "step": 2,
-      "clarification": "Identify what a zero of a linear function is",
-      "solution": "A zero of a function is the point where it crosses the x-axis.",
-      "building_block": "Function → Linear Function → Zero of a Function"
+      "step_explanation": "Identify what a zero of a linear function is.",
+      "math_transformation": "A zero of a function is the point where it crosses the x-axis.",
+      "related_concept": ["Zero of a Linear Function"]
     },
     {
       "step": 3,
-      "clarification": "Identify when the linear function does not have a zero",
-      "solution": "For a linear function to have no zeroes, it must be parallel to the x-axis, meaning it is neither increasing nor decreasing. Thus, a = (6m^2 - 12m) = 0 and b = -5 ≠ 0.",
-      "building_block": "Function → Linear Function → Monotonicity"
+      "step_explanation": "For a linear function to have no zeroes, it must be parallel to the x-axis, meaning a = 0 and b ≠ 0.",
+      "math_transformation": "For a linear function to have no zeroes, it must be neither increasing nor decreasing. Thus, a = (6m^2 - 12m) = 0 and b = -5 ≠ 0.",
+      "related_concept": ["Monotonicity of a Linear Function"]
     },
     {
       "step": 4,
-      "clarification": "Solve the equation for a",
-      "solution": "We calculate: a = (6m^2 - 12m) = 0, 6m^2 - 12m = 0... Factor out m: 6m(m - 2) = 0.",
-      "building_block": "Algebraic Operations → Factoring Out"
+      "step_explanation": "Solve the equation for a.",
+      "math_transformation": "We calculate: a = (6m^2 - 12m) = 0, 6m^2 - 12m = 0... Factor out m: 6m(m - 2) = 0.",
+      "related_concept": ["Factoring Out"]
     },
     {
       "step": 5,
-      "clarification": "Solve for m",
-      "solution": "Solving the equation: 6m = 0 or m - 2 = 0",
-      "building_block": "Equations"
+      "step_explanation": "Solve for m.",
+      "math_transformation": "Solving the equation: 6m = 0 or m - 2 = 0.",
+      "related_concept": ["Solving Linear Equations"]
     }
   ],
   "final_answer": "m = 0 or m = 2"

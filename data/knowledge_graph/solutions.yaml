@@ -1,0 +1,70 @@
+solutions:
+  - id: "S1"
+    problem_id: "P1"
+    source: Łukasz Kosturski"
+    date: "2024-02-15"
+    steps:
+      - id: "ST1"
+        step_number: 1
+        step_explanation: "Identify that the function is a linear function."
+        math_transformation: "This is a linear function, which follows the formula f(x) = ax + b, where a = (6m^2 - 12m), b = -5."
+        related_concept: ["Linear Function"]
+
+      - id: "ST2"
+        step_number: 2
+        step_explanation: "Identify what a zero of a linear function is."
+        math_transformation: "A zero of a function is the point where it crosses the x-axis."
+        related_concept: ["Zero of a Linear Function"]
+
+      - id: "ST3"
+        step_number: 3
+        step_explanation: "For a linear function to have no zeroes, it must be parallel to the x-axis, meaning a = 0 and b ≠ 0."
+        math_transformation: "For a linear function to have no zeroes, it must be neither increasing nor decreasing. Thus, a = (6m^2 - 12m) = 0 and b = -5 ≠ 0."
+        related_concept: ["Monotonicity of a Linear Function"]
+
+      - id: "ST4"
+        step_number: 4
+        step_explanation: "Solve the equation for a."
+        math_transformation: "We calculate: a = (6m^2 - 12m) = 0, 6m^2 - 12m = 0... Factor out m: 6m(m - 2) = 0."
+        related_concept: ["Factoring Out"]
+
+      - id: "ST5"
+        step_number: 5
+        step_explanation: "Solve for m."
+        math_transformation: "Solving the equation: 6m = 0 or m - 2 = 0."
+        related_concept: ["Solving Linear Equations"]
+
+  - id: "S2"
+    problem_id: "P2"
+    source: "Łukasz Kosturski"
+    date: "2024-02-15"
+    steps:
+      - id: "ST6"
+        step_number: 1
+        step_explanation: "Define variables and set up the perimeter equation."
+        math_transformation: "Let x and y be the sides of the rectangle. Since the perimeter is 8, we get: 2(x + y) = 8 → x + y = 4."
+        related_concept: ["Rectangle Perimeter"]
+
+      - id: "ST7"
+        step_number: 2
+        step_explanation: "Express the diagonal using the Pythagorean theorem."
+        math_transformation: "The diagonal of the rectangle is given by d = sqrt(x^2 + y^2)."
+        related_concept: ["Rectangle Diagonal"]
+
+      - id: "ST8"
+        step_number: 3
+        step_explanation: "Substituting y = 4 - x into the diagonal formula."
+        math_transformation: "d = sqrt(x^2 + (4-x)^2) = sqrt(2x^2 - 8x + 16)."
+        related_concept: ["Equations"]
+
+      - id: "ST9"
+        step_number: 4
+        step_explanation: "Find the minimum using the vertex formula."
+        math_transformation: "The quadratic function f(x) = 2x^2 - 8x + 16 has its minimum at x = -B/2A = 2."
+        related_concept: ["Vertex of a Quadratic Function"]
+
+      - id: "ST10"
+        step_number: 5
+        step_explanation: "Compute the final answer."
+        math_transformation: "Since y = 4 - x, we get y = 2. The optimal rectangle is a square with sides 2 × 2."
+        related_concept: ["Rectangle Area"]
