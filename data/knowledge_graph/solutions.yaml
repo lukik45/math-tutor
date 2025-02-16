@@ -1,70 +1,120 @@
 solutions:
-  - id: "S1"
-    problem_id: "P1"
-    source: Łukasz Kosturski"
+
+  - problem_id: "P3"
+    source: "chat_manual"
     date: "2024-02-15"
     steps:
-      - id: "ST1"
-        step_number: 1
-        step_explanation: "Identify that the function is a linear function."
-        math_transformation: "This is a linear function, which follows the formula f(x) = ax + b, where a = (6m^2 - 12m), b = -5."
-        related_concept: ["Linear Function"]
+      - step_number: 1
+        step_explanation: "Count the three-digit numbers with a digit sum of 4 by considering the hundreds digit."
+        math_transformation: >
+          If the hundreds digit is 1, then the remaining two digits must sum to 3, which has 4 solutions.
+          If the hundreds digit is 2, then the remaining sum is 2, with 3 solutions.
+          If the hundreds digit is 3, then the remaining sum is 1, with 2 solutions.
+          If the hundreds digit is 4, then the remaining sum is 0, with 1 solution.
+          Total count = 4 + 3 + 2 + 1 = 10.
+        related_concepts:
+          - "Natural Numbers"
+          - "Addition"
+      - step_number: 2
+        step_explanation: "Calculate the total sum of all these numbers."
+        math_transformation: >
+          For numbers starting with 1, the four solutions sum to 466.
+          For numbers starting with 2, the three solutions sum to 633.
+          For numbers starting with 3, the two solutions sum to 611.
+          For numbers starting with 4, the one solution is 400.
+          Total sum = 466 + 633 + 611 + 400 = 2110.
+        related_concepts:
+          - "Addition"
+      - step_number: 3
+        step_explanation: "Check whether the total sum is divisible by 9."
+        math_transformation: >
+          A number is divisible by 9 if the sum of its digits is divisible by 9.
+          For 2110, the digit sum is 2+1+1+0 = 4.
+          Since 4 is not divisible by 9, 2110 is not divisible by 9.
+        related_concepts:
+          - "Divisibility by 9"
 
-      - id: "ST2"
-        step_number: 2
-        step_explanation: "Identify what a zero of a linear function is."
-        math_transformation: "A zero of a function is the point where it crosses the x-axis."
-        related_concept: ["Zero of a Linear Function"]
-
-      - id: "ST3"
-        step_number: 3
-        step_explanation: "For a linear function to have no zeroes, it must be parallel to the x-axis, meaning a = 0 and b ≠ 0."
-        math_transformation: "For a linear function to have no zeroes, it must be neither increasing nor decreasing. Thus, a = (6m^2 - 12m) = 0 and b = -5 ≠ 0."
-        related_concept: ["Monotonicity of a Linear Function"]
-
-      - id: "ST4"
-        step_number: 4
-        step_explanation: "Solve the equation for a."
-        math_transformation: "We calculate: a = (6m^2 - 12m) = 0, 6m^2 - 12m = 0... Factor out m: 6m(m - 2) = 0."
-        related_concept: ["Factoring Out"]
-
-      - id: "ST5"
-        step_number: 5
-        step_explanation: "Solve for m."
-        math_transformation: "Solving the equation: 6m = 0 or m - 2 = 0."
-        related_concept: ["Solving Linear Equations"]
-
-  - id: "S2"
-    problem_id: "P2"
-    source: "Łukasz Kosturski"
+  - problem_id: "P4"
+    source: "chat_manual"
     date: "2024-02-15"
     steps:
-      - id: "ST6"
-        step_number: 1
-        step_explanation: "Define variables and set up the perimeter equation."
-        math_transformation: "Let x and y be the sides of the rectangle. Since the perimeter is 8, we get: 2(x + y) = 8 → x + y = 4."
-        related_concept: ["Rectangle Perimeter"]
+      - step_number: 1
+        step_explanation: "Find the prime factorization of each number."
+        math_transformation: "28 = 2^2 × 7; 42 = 2 × 3 × 7."
+        related_concepts:
+          - "Prime Factorization"
+      - step_number: 2
+        step_explanation: "For each prime factor, take the highest power present in either number."
+        math_transformation: "For prime 2, the highest power is 2^2 (from 28); for prime 3, it is 3 (from 42); and for prime 7, it is 7 (common to both)."
+        related_concepts:
+          - "Prime Factorization"
+      - step_number: 3
+        step_explanation: "Multiply these highest powers together to obtain the LCM."
+        math_transformation: "LCM = 2^2 × 3 × 7 = 4 × 3 × 7 = 84."
+        related_concepts:
+          - "Least Common Multiple"
 
-      - id: "ST7"
-        step_number: 2
-        step_explanation: "Express the diagonal using the Pythagorean theorem."
-        math_transformation: "The diagonal of the rectangle is given by d = sqrt(x^2 + y^2)."
-        related_concept: ["Rectangle Diagonal"]
-
-      - id: "ST8"
-        step_number: 3
-        step_explanation: "Substituting y = 4 - x into the diagonal formula."
-        math_transformation: "d = sqrt(x^2 + (4-x)^2) = sqrt(2x^2 - 8x + 16)."
-        related_concept: ["Equations"]
-
-      - id: "ST9"
-        step_number: 4
-        step_explanation: "Find the minimum using the vertex formula."
-        math_transformation: "The quadratic function f(x) = 2x^2 - 8x + 16 has its minimum at x = -B/2A = 2."
-        related_concept: ["Vertex of a Quadratic Function"]
-
-      - id: "ST10"
-        step_number: 5
-        step_explanation: "Compute the final answer."
-        math_transformation: "Since y = 4 - x, we get y = 2. The optimal rectangle is a square with sides 2 × 2."
-        related_concept: ["Rectangle Area"]
+  - problem_id: "P5"
+    source: "chat_manual"
+    date: "2024-02-15"
+    steps:
+      - step_number: 1
+        step_explanation: "Calculate the sum of the digits of 375."
+        math_transformation: "3 + 7 + 5 = 15."
+        related_concepts:
+          - "Addition"
+      - step_number: 2
+        step_explanation: "Divide the sum by 375 and multiply by 100 to determine the percentage."
+        math_transformation: "Percentage = (15 / 375) × 100 = 4%."
+        related_concepts:
+          - "Calculating Percentage of a Number"
+          - "Percentages"
+  - problem_id: "P6"
+    source: "chat_manual"
+    date: "2024-02-15"
+    steps:
+      - step_number: 1
+        step_explanation: "Let G be the number of girls. Then the number of boys is G + 60, and the total number of students is 2G + 60."
+        math_transformation: "Boys = G + 60; Total = G + (G + 60) = 2G + 60."
+        related_concepts:
+          - "Variables"
+          - "Addition"
+      - step_number: 2
+        step_explanation: "Since boys make up 65% of the total, set up the equation: G + 60 = 0.65 × (2G + 60)."
+        math_transformation: "G + 60 = 0.65*(2G + 60)."
+        related_concepts:
+          - "Equations"
+          - "Calculating Percentage of a Number"
+      - step_number: 3
+        step_explanation: "Solve the equation to find G."
+        math_transformation: >
+          G + 60 = 1.3G + 39  ⟹  60 - 39 = 1.3G - G  ⟹  21 = 0.3G  ⟹  G = 70.
+        related_concepts:
+          - "Solving Equations"
+          - "Division"
+      - step_number: 4
+        step_explanation: "Therefore, 70 girls took the exam."
+        math_transformation: "G = 70."
+        related_concepts:
+          - "Equations"
+  - problem_id: "P7"
+    source: "chat_manual"
+    date: "2024-02-15"
+    steps:
+      - step_number: 1
+        step_explanation: "Calculate the area of the rectangle by multiplying its dimensions."
+        math_transformation: "Area = (3√3) × (5√3) = 15 × 3 = 45 cm²."
+        related_concepts:
+          - "Multiplication"
+          - "Square Roots"
+      - step_number: 2
+        step_explanation: "Divide the total area of the rectangle by the number of squares."
+        math_transformation: "Area of one square = 45 / 15 = 3 cm²."
+        related_concepts:
+          - "Division"
+          - "Multiplication"
+      - step_number: 3
+        step_explanation: "Thus, the area of one square is 3 cm²."
+        math_transformation: "Area = 3 cm²."
+        related_concepts:
+          - "Equations"

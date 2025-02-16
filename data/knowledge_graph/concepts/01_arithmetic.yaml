@@ -1,11 +1,11 @@
 concepts:
-  # Top-Level Arithmetic Concept
+  # Top-Level Arithmetic
   - name: "Arithmetic"
     description: "Arithmetic is the branch of mathematics that deals with numbers and the basic operations performed on them."
-    example: "Examples include 3 + 4, 5 × 2, etc."
+    example: "Examples: 3 + 4, 5 × 2, 20 ÷ 5."
     requires: []
 
-  # Basic Number Concepts
+  # Properties of Numbers
   - name: "Numbers"
     description: "Numbers are abstract objects used for counting, measuring, and labeling."
     example: "Examples: 1, 2.5, -3, 7/8, π."
@@ -18,12 +18,12 @@ concepts:
 
   - name: "Natural Numbers"
     description: "The set of positive whole numbers starting from 1."
-    example: "1, 2, 3, 4, ..."
+    example: "1, 2, 3, 4, …"
     requires: ["Types of Numbers"]
 
   - name: "Whole Numbers"
     description: "The set of natural numbers together with zero."
-    example: "0, 1, 2, 3, ..."
+    example: "0, 1, 2, 3, …"
     requires: ["Types of Numbers"]
 
   - name: "Rational Numbers"
@@ -32,30 +32,30 @@ concepts:
     requires: ["Types of Numbers"]
 
   - name: "Irrational Numbers"
-    description: "Numbers that cannot be expressed as a simple fraction; their decimals are non-terminating and non-repeating."
+    description: "Numbers that cannot be written as a simple fraction; their decimals are non-terminating and non-repeating."
     example: "π, √2, e."
     requires: ["Types of Numbers"]
 
   # Number Systems
   - name: "Number Systems"
-    description: "Various systems used to represent numbers."
+    description: "Different systems used to represent numbers."
     example: "Decimal, binary, and Roman numeral systems."
     requires: ["Arithmetic"]
 
   - name: "Decimal System"
-    description: "The base-10 numeral system, using digits 0–9."
+    description: "The base-10 numeral system using digits 0–9."
     example: "123 represents 1×10² + 2×10¹ + 3×10⁰."
     requires: ["Number Systems"]
 
   - name: "Roman Numerals"
-    description: "An ancient numeral system using letters such as I, V, X, L, C, D, and M."
+    description: "An ancient numeral system that uses letters like I, V, X, L, C, D, and M."
     example: "X = 10, V = 5, I = 1."
     requires: ["Number Systems"]
 
   # Number Line and Related Properties
   - name: "Number Line"
-    description: "A visual representation of numbers on a straight line, showing order and magnitude."
-    example: "A line with 0 in the center, positive numbers to the right, negative numbers to the left."
+    description: "A visual representation of numbers along a straight line, showing order and magnitude."
+    example: "A line with 0 at the center, positive numbers to the right, and negative numbers to the left."
     requires: ["Arithmetic"]
 
   - name: "Absolute Value"
@@ -68,10 +68,15 @@ concepts:
     example: "3 and -3 are opposites."
     requires: ["Number Line"]
 
-  # Divisibility and Prime Factorization
+  - name: "Sets of Numbers"
+    description: "Groups of numbers that share certain properties. In some contexts, the concept of closure (domknięcie zbioru) is discussed."
+    example: "The set of natural numbers is closed under addition."
+    requires: ["Numbers"]
+
+  # Divisibility of Numbers
   - name: "Divisibility"
     description: "Rules that determine whether one number divides another evenly."
-    example: "12 is divisible by 2, 3, 4, and 6."
+    example: "12 is divisible by 2, 3, 4, 5, 6, 9, and 10 under the appropriate conditions."
     requires: ["Arithmetic"]
 
   - name: "Divisibility by 2"
@@ -81,7 +86,7 @@ concepts:
 
   - name: "Divisibility by 3"
     description: "A number is divisible by 3 if the sum of its digits is a multiple of 3."
-    example: "123: 1+2+3 = 6, which is divisible by 3."
+    example: "123: 1+2+3 = 6, and 6 is divisible by 3."
     requires: ["Divisibility"]
 
   - name: "Divisibility by 4"
@@ -94,23 +99,39 @@ concepts:
     example: "75 is divisible by 5."
     requires: ["Divisibility"]
 
+  - name: "Divisibility by 6"
+    description: "A number is divisible by 6 if it is divisible by both 2 and 3."
+    example: "24 is divisible by 6 because it is divisible by 2 and 3."
+    requires: ["Divisibility", "Divisibility by 2", "Divisibility by 3"]
+
+  - name: "Divisibility by 9"
+    description: "A number is divisible by 9 if the sum of its digits is divisible by 9."
+    example: "729 is divisible by 9 because 7+2+9 = 18, and 18 is divisible by 9."
+    requires: ["Divisibility"]
+
+  - name: "Divisibility by 10"
+    description: "A number is divisible by 10 if it ends in 0."
+    example: "130 is divisible by 10."
+    requires: ["Divisibility"]
+
+  # Prime and Composite Numbers
   - name: "Prime Numbers"
     description: "Numbers greater than 1 that have no divisors other than 1 and themselves."
     example: "2, 3, 5, 7, 11."
     requires: ["Numbers"]
 
   - name: "Composite Numbers"
-    description: "Numbers greater than 1 that are not prime."
+    description: "Numbers greater than 1 that have divisors other than 1 and themselves."
     example: "4, 6, 8, 9."
     requires: ["Numbers"]
 
   - name: "Prime Factorization"
-    description: "Expressing a number as a product of prime numbers."
+    description: "Expressing a number as a product of its prime factors."
     example: "60 = 2 × 2 × 3 × 5."
     requires: ["Prime Numbers", "Composite Numbers"]
 
   - name: "Greatest Common Divisor"
-    description: "The largest number that divides two or more numbers without a remainder."
+    description: "The largest number that divides two or more numbers without leaving a remainder."
     example: "GCD(48, 18) = 6."
     requires: ["Prime Factorization"]
 
@@ -121,12 +142,12 @@ concepts:
 
   # Operations on Numbers
   - name: "Addition"
-    description: "The process of combining two or more numbers to obtain their sum."
+    description: "The operation of combining numbers to get their sum."
     example: "7 + 5 = 12."
     requires: ["Arithmetic", "Numbers"]
 
   - name: "Subtraction"
-    description: "The process of finding the difference between two numbers."
+    description: "The operation of finding the difference between two numbers."
     example: "10 - 4 = 6."
     requires: ["Arithmetic", "Numbers"]
 
@@ -136,73 +157,68 @@ concepts:
     requires: ["Arithmetic", "Numbers"]
 
   - name: "Multiplication by a Negative Number"
-    description: "Multiplying by a negative number reverses the sign of the product."
+    description: "Multiplying by a negative number changes the sign of the product."
     example: "(-3) × 4 = -12."
     requires: ["Multiplication"]
 
   - name: "Division"
-    description: "The process of splitting a number into equal parts."
+    description: "The operation of splitting a number into equal parts."
     example: "20 ÷ 5 = 4."
     requires: ["Arithmetic", "Numbers"]
 
   - name: "Division with Remainder"
-    description: "Division that produces a quotient and a nonzero remainder."
+    description: "Division that produces a quotient and a remainder."
     example: "17 ÷ 5 = 3 remainder 2."
     requires: ["Division"]
 
   - name: "Square Roots"
-    description: "The number which, when multiplied by itself, yields the original number."
+    description: "The number which, when multiplied by itself, gives the original number."
     example: "√16 = 4."
     requires: ["Multiplication"]
 
   - name: "Cube Roots"
-    description: "The number which, when cubed, yields the original number."
+    description: "The number which, when cubed, gives the original number."
     example: "∛27 = 3."
     requires: ["Multiplication"]
 
   - name: "Exponentiation"
-    description: "Raising a number to a given power."
+    description: "Raising a number to a power."
     example: "2³ = 8."
     requires: ["Multiplication"]
 
   - name: "Properties of Exponents"
-    description: "Rules for operations on exponential expressions, such as multiplying powers with the same base."
+    description: "Rules for working with exponents, such as multiplying powers with the same base."
     example: "a^m × a^n = a^(m+n)."
     requires: ["Exponentiation"]
 
   - name: "Rounding"
-    description: "Adjusting a number to a specified level of precision."
+    description: "Adjusting a number to a desired level of precision."
     example: "Rounding 3.14159 to 3.14."
     requires: ["Numbers"]
 
   # Fractions
   - name: "Fractions"
-    description: "A representation of a part of a whole, expressed as a numerator over a denominator."
+    description: "A way to represent parts of a whole as a numerator over a denominator."
     example: "1/2 represents one half."
     requires: ["Numbers"]
 
-  - name: "Proper and Improper Fractions"
-    description: "Proper fractions have a numerator smaller than the denominator; improper fractions have a numerator equal to or larger than the denominator."
-    example: "Proper: 3/4; Improper: 5/3."
-    requires: ["Fractions"]
-
-  - name: "Mixed Numbers"
-    description: "A whole number combined with a proper fraction."
-    example: "1 1/2 represents one and one half."
+  - name: "Classification of Fractions"
+    description: "Fractions can be classified as proper (numerator < denominator), improper (numerator ≥ denominator), or mixed numbers."
+    example: "Proper: 3/4; Improper: 5/3; Mixed: 1 1/2."
     requires: ["Fractions"]
 
   - name: "Simplifying Fractions"
-    description: "Reducing a fraction to its simplest form by dividing the numerator and denominator by their greatest common divisor."
+    description: "Reducing a fraction to its simplest form by dividing numerator and denominator by their GCD."
     example: "8/12 simplifies to 2/3."
     requires: ["Fractions", "Greatest Common Divisor"]
 
   - name: "Extending Fractions"
-    description: "Creating an equivalent fraction by multiplying the numerator and denominator by the same nonzero number."
+    description: "Creating an equivalent fraction by multiplying the numerator and denominator by the same number."
     example: "Extending 1/2 to 2/4."
     requires: ["Fractions"]
 
   - name: "Adding Fractions"
-    description: "Combining fractions with a common denominator by adding their numerators."
+    description: "Combining fractions with the same denominator by adding their numerators."
     example: "1/4 + 2/4 = 3/4."
     requires: ["Fractions"]
 
@@ -217,12 +233,12 @@ concepts:
     requires: ["Fractions"]
 
   - name: "Dividing Fractions"
-    description: "Dividing fractions by multiplying by the reciprocal of the divisor."
+    description: "Dividing fractions by multiplying the dividend by the reciprocal of the divisor."
     example: "1/2 ÷ 2/3 = 1/2 × 3/2 = 3/4."
     requires: ["Fractions"]
 
   - name: "Comparing Fractions"
-    description: "Determining which of two fractions is greater."
+    description: "Determining which of two fractions is larger."
     example: "1/3 is less than 2/3."
     requires: ["Fractions"]
 
@@ -238,28 +254,28 @@ concepts:
     requires: []
 
   - name: "Basic Units"
-    description: "The fundamental units from which derived units are constructed."
+    description: "The fundamental units of measurement from which other units are derived."
     example: "Meter, kilogram, second."
     requires: ["Units"]
 
   - name: "Derived Units"
-    description: "Units created by combining basic units through mathematical operations."
+    description: "Units that are derived from basic units by multiplication or division."
     example: "Newton (kg·m/s²) for force."
     requires: ["Basic Units"]
 
   - name: "Unit Conversion"
-    description: "The process of converting one unit of measurement to another."
+    description: "The process of converting a measurement from one unit to another."
     example: "100 cm = 1 m."
     requires: ["Units", "Basic Units"]
 
   # Percentages
   - name: "Percentages"
-    description: "A way to express a number as a fraction of 100."
+    description: "A method to express a number as a fraction of 100."
     example: "50% means 50 out of 100, or 0.5."
     requires: ["Numbers"]
 
   - name: "Percentage as a Fraction"
-    description: "Converting a percentage into its fractional form."
+    description: "Converting a percentage into its fractional equivalent."
     example: "25% = 25/100 = 1/4."
     requires: ["Percentages"]
 
@@ -268,7 +284,7 @@ concepts:
     example: "10 is 20% of 50."
     requires: ["Percentages"]
 
-  - name: "Increasing/Decreasing by a Percentage"
-    description: "Calculating the new value after increasing or decreasing a number by a given percentage."
+  - name: "Changing a Value by a Given Percentage"
+    description: "Calculating the new value after increasing or decreasing a number by a certain percentage."
     example: "Increasing 100 by 20% gives 120."
     requires: ["Percentages"]

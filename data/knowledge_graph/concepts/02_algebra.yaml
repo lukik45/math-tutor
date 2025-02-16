@@ -1,14 +1,14 @@
 concepts:
-  # Top-Level Algebra Concept
+  # Top-Level Algebra
   - name: "Algebra"
-    description: "Algebra is the branch of mathematics that uses symbols (typically letters) to represent numbers and express mathematical relationships."
-    example: "Examples include expressions like 3x + 2 = 11."
+    description: "Algebra is the branch of mathematics that uses symbols (often letters) to represent numbers and express mathematical relationships."
+    example: "Examples include solving equations like 3x + 2 = 11."
     requires: []
 
-  # Basic Algebra Concepts
+  # Numbers and Variables
   - name: "Variables"
-    description: "Variables are symbols used to represent unknown or changeable quantities."
-    example: "x, y, and z are common variables."
+    description: "Symbols (usually letters) used to represent unknown or variable quantities."
+    example: "x, y, and z are typical variables."
     requires: ["Algebra"]
 
   - name: "Algebraic Expressions"
@@ -17,7 +17,7 @@ concepts:
     requires: ["Algebra", "Variables"]
 
   - name: "Naming Algebraic Expressions"
-    description: "The terminology used to describe parts of an algebraic expression, such as terms, coefficients, and constants."
+    description: "The terminology used to describe parts of algebraic expressions, such as terms, coefficients, and constants."
     example: "In 3x² + 2x - 5, 3 is the coefficient of x²."
     requires: ["Algebraic Expressions", "Algebra"]
 
@@ -28,37 +28,37 @@ concepts:
 
   - name: "Product"
     description: "The result of multiplying two or more numbers or expressions."
-    example: "2 × 3 = 6; the product of x and y is written as xy."
+    example: "2 × 3 = 6; for expressions, xy is the product of x and y."
     requires: ["Algebraic Expressions"]
 
   - name: "Quotient"
-    description: "The result of dividing one expression by another."
-    example: "8 ÷ 2 = 4; the quotient of a and b is written as a/b."
+    description: "The result of dividing one number or expression by another."
+    example: "8 ÷ 2 = 4; a divided by b is written as a/b."
     requires: ["Algebraic Expressions"]
 
   - name: "Order of Operations"
-    description: "A set of rules that determine the correct sequence in which to perform operations in an expression (often remembered as PEMDAS/BODMAS)."
-    example: "In 3 + 2 × 5, multiplication is done before addition, yielding 13."
+    description: "A set of rules that determines the correct sequence in which to perform operations in an expression (often remembered as PEMDAS/BODMAS)."
+    example: "In 3 + 2 × 5, multiplication is performed before addition, yielding 13."
     requires: ["Algebraic Expressions", "Arithmetic"]
 
   - name: "Algebraic Sum"
-    description: "The sum of algebraic expressions, often simplified by combining like terms."
+    description: "The sum of algebraic expressions, typically simplified by combining like terms."
     example: "2x + 3x = 5x."
     requires: ["Algebraic Expressions"]
 
   - name: "Distributive Property"
-    description: "The rule that multiplies a sum by a number, distributing the multiplication to each term inside the parentheses."
+    description: "A property that allows multiplication to distribute over addition or subtraction."
     example: "a(b + c) = ab + ac."
     requires: ["Algebraic Expressions", "Algebra"]
 
   - name: "Combining Like Terms"
-    description: "The process of simplifying expressions by adding or subtracting terms with the same variable factors."
+    description: "Simplifying an expression by adding or subtracting terms with the same variable factors."
     example: "3x + 5x = 8x."
     requires: ["Algebraic Sum"]
 
   - name: "Parentheses and Grouping"
-    description: "Using parentheses to indicate which parts of an expression should be computed first."
-    example: "(x + y) × z means add x and y first, then multiply by z."
+    description: "Using parentheses to indicate that the operations within should be performed first."
+    example: "(x + y) × z means add x and y before multiplying by z."
     requires: ["Order of Operations"]
 
   - name: "Negation of an Expression"
@@ -68,7 +68,7 @@ concepts:
 
   # Equations and Their Solutions
   - name: "Equations"
-    description: "Mathematical statements asserting the equality of two expressions."
+    description: "Mathematical statements that assert the equality of two expressions."
     example: "2x + 3 = 7."
     requires: ["Algebraic Expressions", "Algebra"]
 
@@ -83,12 +83,12 @@ concepts:
     requires: ["Equations"]
 
   - name: "Linear Equations"
-    description: "Equations where the highest power of the variable is one."
+    description: "Equations in which the variable is to the first power and appears in a linear form."
     example: "3x + 4 = 10."
     requires: ["One-variable Equations"]
 
   - name: "Identities"
-    description: "Equations that hold true for all values of the variable(s)."
+    description: "Equations that are true for all values of the variable(s)."
     example: "x + 0 = x is an identity."
     requires: ["One-variable Equations"]
 
@@ -99,7 +99,7 @@ concepts:
 
   - name: "Transposition"
     description: "The method of moving terms from one side of an equation to the other by changing their signs."
-    example: "For 2x + 3 = 7, subtracting 3 from both sides gives 2x = 4."
+    example: "For 2x + 3 = 7, subtracting 3 from both sides yields 2x = 4."
     requires: ["Solving Equations"]
 
   - name: "Operations on Equations"
