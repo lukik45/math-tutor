@@ -1,0 +1,108 @@
+concepts:
+  # Top-Level Algebra Concept
+  - name: "Algebra"
+    description: "Algebra is the branch of mathematics that uses symbols (typically letters) to represent numbers and express mathematical relationships."
+    example: "Examples include expressions like 3x + 2 = 11."
+    requires: []
+
+  # Basic Algebra Concepts
+  - name: "Variables"
+    description: "Variables are symbols used to represent unknown or changeable quantities."
+    example: "x, y, and z are common variables."
+    requires: ["Algebra"]
+
+  - name: "Algebraic Expressions"
+    description: "Combinations of numbers, variables, and operations that represent a value."
+    example: "3x + 2 or 5a - 4b."
+    requires: ["Algebra", "Variables"]
+
+  - name: "Naming Algebraic Expressions"
+    description: "The terminology used to describe parts of an algebraic expression, such as terms, coefficients, and constants."
+    example: "In 3x² + 2x - 5, 3 is the coefficient of x²."
+    requires: ["Algebraic Expressions", "Algebra"]
+
+  - name: "Square (Exponentiation)"
+    description: "Raising a number or expression to the power of 2."
+    example: "x² means x multiplied by x."
+    requires: ["Algebraic Expressions"]
+
+  - name: "Product"
+    description: "The result of multiplying two or more numbers or expressions."
+    example: "2 × 3 = 6; the product of x and y is written as xy."
+    requires: ["Algebraic Expressions"]
+
+  - name: "Quotient"
+    description: "The result of dividing one expression by another."
+    example: "8 ÷ 2 = 4; the quotient of a and b is written as a/b."
+    requires: ["Algebraic Expressions"]
+
+  - name: "Order of Operations"
+    description: "A set of rules that determine the correct sequence in which to perform operations in an expression (often remembered as PEMDAS/BODMAS)."
+    example: "In 3 + 2 × 5, multiplication is done before addition, yielding 13."
+    requires: ["Algebraic Expressions", "Arithmetic"]
+
+  - name: "Algebraic Sum"
+    description: "The sum of algebraic expressions, often simplified by combining like terms."
+    example: "2x + 3x = 5x."
+    requires: ["Algebraic Expressions"]
+
+  - name: "Distributive Property"
+    description: "The rule that multiplies a sum by a number, distributing the multiplication to each term inside the parentheses."
+    example: "a(b + c) = ab + ac."
+    requires: ["Algebraic Expressions", "Algebra"]
+
+  - name: "Combining Like Terms"
+    description: "The process of simplifying expressions by adding or subtracting terms with the same variable factors."
+    example: "3x + 5x = 8x."
+    requires: ["Algebraic Sum"]
+
+  - name: "Parentheses and Grouping"
+    description: "Using parentheses to indicate which parts of an expression should be computed first."
+    example: "(x + y) × z means add x and y first, then multiply by z."
+    requires: ["Order of Operations"]
+
+  - name: "Negation of an Expression"
+    description: "Applying a negative sign to an entire expression, effectively reversing the sign of each term."
+    example: "-(x + y) = -x - y."
+    requires: ["Algebraic Expressions"]
+
+  # Equations and Their Solutions
+  - name: "Equations"
+    description: "Mathematical statements asserting the equality of two expressions."
+    example: "2x + 3 = 7."
+    requires: ["Algebraic Expressions", "Algebra"]
+
+  - name: "Solving Equations"
+    description: "The process of finding the value(s) of the variable(s) that satisfy an equation."
+    example: "Solving 2x + 3 = 7 yields x = 2."
+    requires: ["Equations", "Addition", "Subtraction", "Multiplication", "Division"]
+
+  - name: "One-variable Equations"
+    description: "Equations that involve only one variable."
+    example: "x + 5 = 10."
+    requires: ["Equations"]
+
+  - name: "Linear Equations"
+    description: "Equations where the highest power of the variable is one."
+    example: "3x + 4 = 10."
+    requires: ["One-variable Equations"]
+
+  - name: "Identities"
+    description: "Equations that hold true for all values of the variable(s)."
+    example: "x + 0 = x is an identity."
+    requires: ["One-variable Equations"]
+
+  - name: "Contradictions"
+    description: "Equations that are false for every value of the variable(s)."
+    example: "x + 1 = x is a contradiction."
+    requires: ["One-variable Equations"]
+
+  - name: "Transposition"
+    description: "The method of moving terms from one side of an equation to the other by changing their signs."
+    example: "For 2x + 3 = 7, subtracting 3 from both sides gives 2x = 4."
+    requires: ["Solving Equations"]
+
+  - name: "Operations on Equations"
+    description: "Applying arithmetic operations equally to both sides of an equation to isolate the variable."
+    example: "Dividing 2x = 4 by 2 yields x = 2."
+    requires: ["Transposition"]
