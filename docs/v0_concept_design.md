@@ -1,6 +1,6 @@
 
 
-## **Core Features for MVP**
+## **Core Features for MVP** (v0)
 
 ### **📌 Problem Input & Processing**
 
@@ -346,7 +346,10 @@ Exercise Module → User: Provide Learning Resources
 ---
 
 
+chatGPT question
 
+
+okay. I want to create math tutor app. i have found the finetuned and lightweight model https://huggingface.co/unsloth/Qwen2.5-Math-7B-bnb-4bit that solves the math exercises. But i want to create the true tutor, in such a way that the tutor when proposing the solution, associates each step with the math concept or tool that is required to proceed. this way i would allow students to see a bigger picture of math, allow them to polish their math tools and help them acknowledge in which situatians which tools and concepts are used, so that they stop just remembering the solution, but they really grasp the logic behind what they are doing. To do it, i thought i might use the knowledge graph (eg as Neo4j graph) to store all the math concepts needed in primary and high school, organized hierarichically and modeling the dependencies between them. Then, i would like another LLM to assign concepts or tools that were used in each step of the generated solution, from the knowledge graph. How to do it? Is langchain a good framework? please brainstorm with me.
 
 
 
@@ -370,3 +373,41 @@ Exercise Module → User: Provide Learning Resources
 3️⃣ **Would you like a Neo4j schema for storing solutions & concepts?**
 
 Let me know what you'd like to refine next! 🚀
+
+
+
+## What is missing
+
+- **User Authentication & Authorization:**
+    
+    - Implement secure user login, especially for the Administration UI and for tracking user progress.
+    - Ensure that only authorized users can modify the knowledge graph or add new problems/solutions.
+- **Data Storage and Persistence:**
+    
+    - Besides Neo4j for the knowledge graph, consider a relational database (e.g., PostgreSQL) for storing user data, progress, and historical records of problem attempts.
+    - Define clear data models and schemas for each storage system.
+- **Monitoring and Logging:**
+    
+    - Set up logging for all components (API, Engine, KG operations) to help with debugging and monitoring usage.
+    - Consider using a monitoring tool or dashboard to track system performance and error rates.
+- **Scalability & Deployment Strategy:**
+    
+    - Plan for scalability by designing containerized microservices (using Docker) and orchestration (e.g., Kubernetes) when you move beyond prototyping.
+    - Consider continuous integration/continuous deployment (CI/CD) pipelines for smoother updates.
+- **Testing and Quality Assurance:**
+    
+    - Develop a suite of automated tests (unit tests, integration tests) for each component to ensure stability as the project grows.
+    - Test edge cases in the solution engine (e.g., when a required concept is missing) and validate the KG’s data consistency.
+- **User Experience (UX) Design:**
+    
+    - Design the front-end carefully so that solution steps and linked concepts are presented in an intuitive, interactive way.
+    - Consider providing visualizations of the knowledge graph and feedback mechanisms for students to flag confusing steps.
+- **Documentation:**
+    
+    - Create comprehensive documentation for developers and end users (students/teachers). This should include API docs, system architecture diagrams, and user guides.
+- **Fallback Mechanisms:**
+    
+    - Ensure that if the engine cannot map a step to a concept, a fallback explanation or broader concept is provided so the user isn’t left without context.
+- **Analytics and Feedback:**
+    
+    - Implement analytics to track user engagement and identify which concepts or steps are frequently problematic. This can guide future improvements.

@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+neo4j
+requests
+langchain
+langchain-huggingface
+langchain-openai
